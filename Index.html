@@ -191,42 +191,40 @@
     </section>
 
     <!-- Contact -->
-
-    <div id="contact" class="container pt-6">
-        <p id="title" class="title is-3 has-text-white me-title mb-1">
-            Something on your mind ?
-        <p class="has-text-weight-bold pb-5">Send me an email.</p>
-        <div class="field">
-            <label class="label has-text-white">Name</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="Enter Your Name">
+    <form id="gform" method="post"
+        action="https://script.google.com/macros/s/AKfycby4iwJIp0ut1eYoBaO_QAKrI7mZY4W13cl8X4TXeKjf5_kN2HS88xdZblB0X03ep1KN/exec">
+        <div id="contact" class="container pt-6">
+            <p id="title" class="title is-3 has-text-white me-title mb-1">
+                Something on your mind ?
+            <p class="has-text-weight-bold pb-5">Send me an email.</p>
+            <div class="field">
+                <label class="label has-text-white">Name</label>
+                <div class="control">
+                    <input class="input" name="name" type="text" placeholder="Enter Your Name">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label has-text-white">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" name="email" type="email" placeholder="Email input" value="">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label has-text-white">Message</label>
+                <div class="control">
+                    <textarea class="textarea" name="message" placeholder="Your Message"></textarea>
+                </div>
+            </div>
+            <div class="field is-grouped pb-6">
+                <div class="control">
+                    <button class="button is-link"><a href="#"></a> Submit</button>
+                </div>
             </div>
         </div>
-
-        <div class="field">
-            <label class="label has-text-white">Email</label>
-            <div class="control has-icons-left has-icons-right">
-                <input class="input" type="email" placeholder="Email input" value="">
-                <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                </span>
-            </div>
-        </div>
-
-        <div class="field">
-            <label class="label has-text-white">Message</label>
-            <div class="control">
-                <textarea class="textarea" placeholder="Your Message"></textarea>
-            </div>
-        </div>
-
-        <div class="field is-grouped pb-6">
-            <div class="control">
-                <button class="button is-link"><a href="#"></a> Submit</button>
-            </div>
-        </div>
-    </div>
-
+    </form>
     <!-- Footer -->
 
     <footer class="footer has-background-grey-light">
@@ -238,7 +236,7 @@
     </footer>
 
 
-
+    <script src="Tabletop.js"></script>
 </body>
 
 </html>
